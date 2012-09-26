@@ -24,6 +24,7 @@
 		5E5C6EC8160FDAB700EDBD27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E5C6EA0160FDAB700EDBD27 /* Foundation.framework */; };
 		5E5C6ED0160FDAB700EDBD27 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5E5C6ECE160FDAB700EDBD27 /* InfoPlist.strings */; };
 		5E5C6ED3160FDAB700EDBD27 /* TZTracesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5C6ED2160FDAB700EDBD27 /* TZTracesTests.m */; };
+		5E5C6EDF160FDB6900EDBD27 /* TZTrace.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5E5C6EDE160FDB6900EDBD27 /* TZTrace.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		5E5C6ECF160FDAB700EDBD27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5E5C6ED1160FDAB700EDBD27 /* TZTracesTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TZTracesTests.h; sourceTree = "<group>"; };
 		5E5C6ED2160FDAB700EDBD27 /* TZTracesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TZTracesTests.m; sourceTree = "<group>"; };
+		5E5C6EDD160FDB6900EDBD27 /* TZTrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZTrace.h; sourceTree = "<group>"; };
+		5E5C6EDE160FDB6900EDBD27 /* TZTrace.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TZTrace.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,7 @@
 		5E5C6EA4160FDAB700EDBD27 /* TZTraces */ = {
 			isa = PBXGroup;
 			children = (
+				5E5C6EDC160FDB6900EDBD27 /* TZTrace */,
 				5E5C6EAD160FDAB700EDBD27 /* AppDelegate.h */,
 				5E5C6EAE160FDAB700EDBD27 /* AppDelegate.m */,
 				5E5C6EB6160FDAB700EDBD27 /* ViewController.h */,
@@ -161,6 +165,15 @@
 				5E5C6ECE160FDAB700EDBD27 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5E5C6EDC160FDB6900EDBD27 /* TZTrace */ = {
+			isa = PBXGroup;
+			children = (
+				5E5C6EDD160FDB6900EDBD27 /* TZTrace.h */,
+				5E5C6EDE160FDB6900EDBD27 /* TZTrace.mm */,
+			);
+			path = TZTrace;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,6 +290,7 @@
 				5E5C6EAB160FDAB700EDBD27 /* main.m in Sources */,
 				5E5C6EAF160FDAB700EDBD27 /* AppDelegate.m in Sources */,
 				5E5C6EB8160FDAB700EDBD27 /* ViewController.m in Sources */,
+				5E5C6EDF160FDB6900EDBD27 /* TZTrace.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +415,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TZTraces/TZTraces-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "";
 				INFOPLIST_FILE = "TZTraces/TZTraces-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -460,6 +475,7 @@
 				5E5C6ED8160FDAB700EDBD27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5E5C6ED9160FDAB700EDBD27 /* Build configuration list for PBXNativeTarget "TZTracesTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +484,7 @@
 				5E5C6EDB160FDAB700EDBD27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
